@@ -43,38 +43,4 @@ Inputs and Outputs:
 | partition | Documents the partition that the message was placed on |
 | offset    | Documents the offset for the message                   |
 
-## Configuration Examples
-### Simple
-Configure a task to send a message to the 'syslog' topic.
-
-
-```json
-{
-      "id": 2,
-      "name": "tibco-kafkapub",
-      "description": "Publish a message to a kafka topic",
-      "type": 1,
-      "activityType": "tibco-kafkapub",
-      "activityRef": "github.com/rickdantz/KafkaMessage",
-      "attributes": [
-        {
-          "name": "BrokerUrls",
-          "value": "bilbo:9092",
-          "required": true,
-          "type": "string"
-        },
-        {
-          "name": "Topic",
-          "value": "syslog",
-          "required": true,
-          "type": "string"
-        },
-        {
-          "name": "Message",
-          "value": "mary had a little lamb",
-          "required": true,
-          "type": "string"
-        }
-      ]
-}
 ```
