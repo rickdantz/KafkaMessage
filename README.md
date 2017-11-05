@@ -1,0 +1,2 @@
+# KafkaMessage
+Custom Kafka activity
