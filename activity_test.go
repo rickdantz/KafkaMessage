@@ -1,4 +1,4 @@
-package kafkaActivity
+package KafkaMessage
 
 import (
 	"testing"
@@ -8,7 +8,7 @@ import (
 )
 
 func TestRegistered(t *testing.T) {
-	act := activity.Get("tibco-kafka")
+	act := activity.Get("tibco-KafkaMessage")
 
 	if act == nil {
 		t.Error("Activity Not Registered")
